@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{670C86CD-852F-494B-BF17-F4947A91F4F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LFM.Submissions.Code</RootNamespace>
+    <AssemblyName>LFM.Submissions.Code</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Infrastructure\LandRegistry\SubmitEdrsProcessor.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFMSubmissions/Element/E:\Git\ServiceMatrixWithSaga\LFMSubmissions\LFMSubmissions.slnbldr%252f667f31ca-3d70-4ad9-84fd-7b06cd2762e6</SourceModelReference>
+      <ItemGuid>a6cd8ea5-c5c8-4a90-be67-d8f9e2f317c0</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\LandRegistry\SubmitEdrsSender.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFMSubmissions/Element/E:\Git\ServiceMatrixWithSaga\LFMSubmissions\LFMSubmissions.slnbldr%252f570e806f-78aa-4136-a9e2-22571f997780</SourceModelReference>
+      <ItemGuid>078876e6-9a36-4a60-9576-f5a2e3ba2327</ItemGuid>
+    </Compile>
+    <Compile Include="LandRegistry\SubmitEdrsProcessor.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFMSubmissions/Element/E:\Git\ServiceMatrixWithSaga\LFMSubmissions\LFMSubmissions.slnbldr%252f667f31ca-3d70-4ad9-84fd-7b06cd2762e6</SourceModelReference>
+      <ItemGuid>d0f2f471-d4eb-4fdf-bb84-907e10393a93</ItemGuid>
+    </Compile>
+    <Compile Include="LandRegistry\SubmitEdrsSender.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/LFMSubmissions/Element/E:\Git\ServiceMatrixWithSaga\LFMSubmissions\LFMSubmissions.slnbldr%252f7a68c0a0-5161-4f3c-901f-c05f6b024895</SourceModelReference>
+      <ItemGuid>72e1ce9e-7ae8-4a45-8330-0f02d2db1670</ItemGuid>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LFM.Submissions.Contract\LFM.Submissions.Contract.csproj">
+      <Project>{CD6B7761-10E3-45A5-BAC3-B7F3E6135524}</Project>
+      <Name>LFM.Submissions.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LFM.Submissions.InternalMessages\LFM.Submissions.InternalMessages.csproj">
+      <Project>{3EE83A3A-406A-4F11-9F09-245076DC0331}</Project>
+      <Name>LFM.Submissions.InternalMessages</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

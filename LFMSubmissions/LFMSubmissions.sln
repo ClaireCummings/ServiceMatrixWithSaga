@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7D466E77-CBBD-4480-B488-2C6283C7DC04}"
+	ProjectSection(SolutionItems) = preProject
+		LFMSubmissions.guidancestate = LFMSubmissions.guidancestate
+		LFMSubmissions.slnbldr = LFMSubmissions.slnbldr
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EDE318AE-09B8-4BBA-A08C-1658ECD193A2}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LFM.Submissions.Contract", "LFM.Submissions.Contract\LFM.Submissions.Contract.csproj", "{CD6B7761-10E3-45A5-BAC3-B7F3E6135524}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LFM.Submissions.InternalMessages", "LFM.Submissions.InternalMessages\LFM.Submissions.InternalMessages.csproj", "{3EE83A3A-406A-4F11-9F09-245076DC0331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LFM.Submissions.Code", "LFM.Submissions.Code\LFM.Submissions.Code.csproj", "{670C86CD-852F-494B-BF17-F4947A91F4F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LFM.Submissions.Client", "LFM.Submissions.Client\LFM.Submissions.Client.csproj", "{621D142C-3F61-4505-B11C-61E12FAE848A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LFM.Submissions.Backend", "LFM.Submissions.Backend\LFM.Submissions.Backend.csproj", "{EC61EF3D-4715-46DC-A3B7-0B3D64D145B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD6B7761-10E3-45A5-BAC3-B7F3E6135524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD6B7761-10E3-45A5-BAC3-B7F3E6135524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD6B7761-10E3-45A5-BAC3-B7F3E6135524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD6B7761-10E3-45A5-BAC3-B7F3E6135524}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE83A3A-406A-4F11-9F09-245076DC0331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE83A3A-406A-4F11-9F09-245076DC0331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE83A3A-406A-4F11-9F09-245076DC0331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE83A3A-406A-4F11-9F09-245076DC0331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670C86CD-852F-494B-BF17-F4947A91F4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670C86CD-852F-494B-BF17-F4947A91F4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621D142C-3F61-4505-B11C-61E12FAE848A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621D142C-3F61-4505-B11C-61E12FAE848A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621D142C-3F61-4505-B11C-61E12FAE848A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621D142C-3F61-4505-B11C-61E12FAE848A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC61EF3D-4715-46DC-A3B7-0B3D64D145B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC61EF3D-4715-46DC-A3B7-0B3D64D145B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC61EF3D-4715-46DC-A3B7-0B3D64D145B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC61EF3D-4715-46DC-A3B7-0B3D64D145B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		GuidanceWorkflows = a5e9f15b-ad7f-4201-851e-186dd8db3bc9:ServiceMatrix Guidance:4.0.0
+	EndGlobalSection
+EndGlobal
