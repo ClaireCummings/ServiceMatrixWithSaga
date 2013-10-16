@@ -22,7 +22,7 @@ namespace LFM.Submissions.Client.Controllers
         public ActionResult About()
         {
 
-            SubmitEdrsSender.Send(new SubmitEdrs());
+            SubmitEdrsSender.Send(new SubmitEdrs(){ApplicationId = Guid.NewGuid().ToString()});
             return View();
         }
 

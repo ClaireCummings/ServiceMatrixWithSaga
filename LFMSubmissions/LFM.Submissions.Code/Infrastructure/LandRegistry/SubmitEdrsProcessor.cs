@@ -11,6 +11,8 @@ namespace LFMSubmissions.LandRegistry
 		
 		public void Handle(SubmitEdrs message)
 		{
+		    this.Data.ApplicationId = message.ApplicationId;
+
 			this.HandleImplementation(message);
 		}
 
@@ -23,6 +25,6 @@ namespace LFMSubmissions.LandRegistry
            public virtual string Originator { get; set; }
            public virtual string OriginalMessageId { get; set; }
 
-
+           public virtual string ApplicationId { get; set; }
     }
 }
