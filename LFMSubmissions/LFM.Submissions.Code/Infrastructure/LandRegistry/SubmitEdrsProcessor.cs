@@ -1,11 +1,12 @@
 ﻿using System;
 using NServiceBus;
 using LFMSubmissions.InternalMessages.LandRegistry;
+using NServiceBus.Saga;
 
 
 namespace LFMSubmissions.LandRegistry
 {
-    public partial class SubmitEdrsProcessor : IHandleMessages<SubmitEdrs>
+    public partial class SubmitEdrsProcessor : Saga<SubmitEdrsProcessorSagaData>, IAmStartedByMessages<SubmitEdrs>
     {
 		
 		public void Handle(SubmitEdrs message)
@@ -14,8 +15,14 @@ namespace LFMSubmissions.LandRegistry
 		}
 
 		partial void HandleImplementation(SubmitEdrs message);
+     }
 
-		public IBus Bus { get; set; }
+     public partial class SubmitEdrsProcessorSagaData : IContainSagaData
+     {
+           public virtual Guid Id { get; set; }
+           public virtual string Originator { get; set; }
+           public virtual string OriginalMessageId { get; set; }
+
 
     }
 }
